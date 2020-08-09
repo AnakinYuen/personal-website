@@ -1,0 +1,53 @@
+@use '../../../../scss/variables' as variables;
+
+.close {
+  width: 1em;
+  height: 1em;
+  margin-left: 0.5em;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.item {
+  display: inline-flex;
+  font-size: 1rem;
+  line-height: 2.8em;
+  align-items: center;
+  min-width: 160px;
+  max-width: 250px;
+  background-color: #2d2d2d;
+  color: variables.$black-0;
+  opacity: 0.5;
+  padding: 0 1em;
+  margin: 0 1px;
+  cursor: pointer;
+
+  &--active {
+    opacity: 1;
+    background-color: #1e1e1e;
+  }
+
+  &:hover, &--active {
+    > .close {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+
+}
+
+.title {
+  display: inline-flex;
+  align-items: center;
+  flex: 1;
+}
+
+.icon {
+  width: 1.1em;
+  height: 1.1em;
+  margin-right: 1em;
+}
+
+.spacer {
+  flex: 1;
+}

@@ -1,0 +1,15 @@
+@use '../../../scss/variables' as variables;
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1rem;
+  font-size: 1rem;
+  color: variables.$black-0;
+
+  > img {
+    width: 1em;
+    height: 1em;
+    margin-right: 4px;
+  }
+}

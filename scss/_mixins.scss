@@ -1,0 +1,14 @@
+$tablet: 425px + 1px;
+$desktop: 768px + 1px;
+
+@mixin tablet {
+  @media only screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: $desktop) {
+    @content;
+  }
+}

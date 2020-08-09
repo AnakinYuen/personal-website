@@ -1,0 +1,20 @@
+@use '../../../scss/variables' as variables;
+
+.item {
+  margin-bottom: 32px;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.link {
+  display: block;
+  line-height: 0;
+
+  > img {
+    width: variables.$menu-item-size;
+    height: variables.$menu-item-size;
+  }
+}

@@ -1,0 +1,10 @@
+@use '../../scss/variables' as variables;
+
+.list {
+  display: inline-block;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: variables.$menu-padding;
+  background-color: variables.$menu-background-color;
+}

@@ -1,0 +1,73 @@
+@use '../../scss/mixins' as *;
+@use '../../scss/variables' as variables;
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  transform: translateX(-100%);
+  transition: all 0.3s;
+  z-index: 2;
+
+  &--active {
+    transform: translateX(0);
+  }
+
+  @include tablet {
+    transform: translateX(0);
+  }
+}
+
+.header {
+  position: sticky;
+  z-index: 3;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: variables.$menu-padding;
+  padding-right: variables.$menu-padding + variables.$menu-item-size;
+  background-color: variables.$menu-background-color;
+
+  &::after {
+    content: '';
+  }
+
+  > img {
+    width: variables.$menu-item-size;
+    height: variables.$menu-item-size;
+  }
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.tab-bar {
+  position: sticky;
+  top: variables.$header-height;
+  z-index: 1;
+  @include tablet {
+    top: 0;
+    margin-left: variables.$menu-width;
+  }
+}
+
+.main {
+  @include tablet {
+    margin-left: variables.$menu-width;
+  }
+}
+
+.footer {
+  position: fixed;
+  background-color: #007ad3;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 3px 8px;
+  @include tablet {
+    margin-left: variables.$menu-width;
+  }
+}

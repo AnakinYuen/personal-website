@@ -1,0 +1,8 @@
+@use '../../../scss/variables' as variables;
+
+.main {
+  padding: variables.$main-padding;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(auto, 600px));
+  gap: 1.5rem;
+}

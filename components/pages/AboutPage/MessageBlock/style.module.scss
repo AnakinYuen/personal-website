@@ -1,0 +1,30 @@
+.message {
+  display: flex;
+  padding-top: 1rem;
+}
+
+.avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+  border-radius: 0.5em;
+}
+
+.content {
+  flex: 1;
+
+  > p {
+    margin-bottom: 0.2rem;
+  }
+}
+
+.name {
+  margin: 0;
+  line-height: 1em;
+
+  > span {
+    font-size: 0.8em;
+    font-weight: 400;
+    color: #828487;
+  }
+}

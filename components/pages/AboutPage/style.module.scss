@@ -1,0 +1,101 @@
+@use '../../../scss/mixins' as *;
+@use '../../../scss/variables' as variables;
+
+$header-height: 50px;
+$background-color: #1a1c21;
+$border-color: #3b3e42;
+$padding: 0.5rem;
+$color: #d1d2d3;
+
+.main {
+  padding-bottom: variables.$main-padding-bottom;
+  color: $color;
+}
+
+.header {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  top: variables.$header-height + variables.$tab-bar-height;
+  @include tablet {
+    top: variables.$tab-bar-height;
+  }
+  height: $header-height;
+  font-weight: 700;
+  border-bottom: 1px solid $border-color;
+  padding: $padding;
+  padding-top: 1rem;
+  background-color: $background-color;
+
+  > h3 {
+    margin: 0;
+    flex: 1;
+  }
+}
+
+.content {
+  display: flex;
+  flex-flow: column;
+  padding: $padding;
+  padding-bottom: 50px;
+
+  > h2 {
+    font-size: 1.3rem;
+  }
+
+  > p {
+    color: #999c9d;
+  }
+}
+
+.avatar {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 0.5em;
+  margin-bottom: 0.5rem;
+}
+
+.button {
+  border: 0;
+  background-color: transparent;
+
+  > img {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}
+
+.date {
+  margin: 0.3rem;
+  margin-bottom: 0;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid $border-color;
+}
+
+.control {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  left: 0;
+  right: 0;
+  padding: 0 0.25rem;
+  bottom: variables.$footer-height;
+  border-top: 1px solid $border-color;
+  overflow-x: auto;
+  background-color: $background-color;
+
+  @include tablet {
+    left: variables.$menu-width;
+  }
+
+  button {
+    border: 1px solid $color;
+    padding: 0.5rem;
+    border-radius: 999px;
+    background-color: transparent;
+    flex-shrink: 0;
+    margin: 0 0.25rem;
+    color: $color;
+  }
+}

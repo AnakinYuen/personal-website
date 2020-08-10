@@ -1,0 +1,12 @@
+@use '../../../../../scss/variables' as variables;
+
+.notice {
+  font-weight: 400;
+  color: variables.$black-400;
+  font-size: 0.8rem;
+}
+
+.preview {
+  background-color: variables.$black-900;
+  margin: 1rem 0;
+}

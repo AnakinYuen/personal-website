@@ -1,0 +1,65 @@
+@use '../../../../scss/variables' as variables;
+
+.post {
+  display: flex;
+}
+
+.vote {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.content {
+  flex: 1;
+}
+
+.member {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  justify-content: space-between;
+  font-size: 0.75rem;
+}
+
+.menu {
+  flex: 1;
+  white-space: nowrap;
+  margin-right: 1rem;
+  color: variables.$black-400;
+}
+
+.owner {
+  display: grid;
+  width: 200px;
+  padding: 5px 6px 7px 7px;
+  background-color: rgba(#03a9f4, 0.4);
+  border-radius: 3px;
+  grid-template-columns: 2rem 1fr;
+  grid-template-rows: auto 1fr;
+  column-gap: 0.5rem;
+  grid-template-areas:
+    'date date'
+    'avatar name';
+}
+
+.date {
+  grid-area: date;
+}
+
+.avatar {
+  grid-area: avatar;
+  background-color: #003466;
+  overflow: hidden;
+  border-radius: 3px;
+
+  > img {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.name {
+  grid-area: name;
+}

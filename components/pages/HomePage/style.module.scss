@@ -1,0 +1,36 @@
+@use '../../../scss/mixins' as *;
+@use '../../../scss/variables' as variables;
+
+.main {
+  padding: variables.$main-padding;
+  color: variables.$black-0;
+  display: grid;
+  grid-template: repeat(4, auto) / auto;
+  gap: 2rem;
+
+  @include desktop {
+    grid-template: repeat(3, auto) / repeat(2, 1fr);
+  }
+
+  h1 {
+    color: variables.$black-300;
+    font-weight: 300;
+  }
+}
+
+.left {
+  @include desktop {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+  }
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.path {
+  margin-left: 1em;
+  color: variables.$black-400;
+}

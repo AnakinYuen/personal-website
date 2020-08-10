@@ -1,0 +1,14 @@
+@use '../../../../scss/variables' as variables;
+
+.block {
+  background-color: #181818;
+  color: #969696;
+  padding: 1.2em 1em;
+  margin-bottom: 0.5em;
+}
+
+.title {
+  font-size: 1.17em;
+  color: variables.$black-200;
+  font-weight: 400;
+}

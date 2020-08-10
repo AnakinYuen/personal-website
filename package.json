@@ -9,9 +9,11 @@
   },
   "dependencies": {
     "next": "9.4.4",
+    "plotly.js": "^1.54.7",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-mde": "^10.1.0",
+    "react-plotly.js": "^2.4.0",
     "showdown": "^1.9.1"
   },
   "devDependencies": {

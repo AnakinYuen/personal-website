@@ -1,0 +1,26 @@
+@use '../../../scss/mixins' as *;
+@use '../../../scss/variables' as variables;
+
+.main {
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: variables.$content-height;
+
+  @include tablet {
+    height: variables.$tablet-content-height;
+  }
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr;
+  grid-template-areas:
+    'plot1 plot1'
+    'plot2 plot3'
+    'plot2 plot4';
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,3 +1,24 @@
+@use '../scss/variables' as variables;
+
+$mde-toolbar-color: variables.$black-900;
+$mde-button-color: variables.$black-400;
+@import "~react-mde/lib/styles/scss/react-mde-toolbar.scss";
+@import "~react-mde/lib/styles/scss/react-mde-editor.scss";
+@import "~react-mde/lib/styles/scss/react-mde.scss";
+
+.react-mde .grip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: variables.$black-200;
+  background-color: variables.$black-700;
+}
+
+.mde-textarea-wrapper textarea.mde-text {
+  color: variables.$black-200;
+  background-color: $mde-toolbar-color;
+}
+
 .icon-red {
   filter: brightness(50%) sepia(0.5) hue-rotate(0deg) saturate(100);
 }

@@ -1,6 +1,9 @@
 {
   "name": "personal-website",
-  "version": "0.1.0",
+  "description": "Anakin Yuen's personal website",
+  "version": "1.0.0",
+  "author": "Anakin Yuen",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "next dev",

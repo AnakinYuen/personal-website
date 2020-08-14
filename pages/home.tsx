@@ -33,14 +33,14 @@ export const getStaticProps: GetStaticProps = async (context) => {
       },
       work: [
         {
+          name: 'personal-website',
+          url: 'https://github.com/AnakinYuen/personal-website',
+          path: '/personal-website',
+        },
+        {
           name: 'time-to-leave',
           url: 'https://github.com/AnakinYuen/time-to-leave',
           path: '/time-to-leave',
-        },
-        {
-          name: 'time-to-leave-api',
-          url: 'https://github.com/AnakinYuen/time-to-leave-api',
-          path: '/time-to-leave-api',
         },
         {
           name: 'bit-react',

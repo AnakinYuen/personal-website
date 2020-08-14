@@ -4,6 +4,24 @@ import { passThroughProps } from '../utils/passThroughProps';
 
 const projects = [
   {
+    image: '/images/projects/personal-website.png',
+    avatar: 'https://avatars0.githubusercontent.com/u/10099001',
+    author: 'AnakinYuen',
+    name: 'personal-website',
+    description: `Anakin Yuen's personal website`,
+    stacks: ['nextjs', 'workbox', 'pwa', 'lighthouse', 'vercel'],
+    links: [
+      {
+        title: 'GitHub',
+        href: 'https://github.com/AnakinYuen/personal-website',
+      },
+      {
+        title: 'Website',
+        href: 'https://anakinyuen.com',
+      },
+    ],
+  },
+  {
     image: '/images/projects/time-to-leave.gif',
     avatar: 'https://avatars0.githubusercontent.com/u/10099001',
     author: 'AnakinYuen',

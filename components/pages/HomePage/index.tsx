@@ -29,7 +29,7 @@ const HomePage: React.FC<Props> = (props) => {
   return (
     <>
       <Head>
-        <title>Home | Web Developer</title>
+        <title>Home | Anakin Yuen</title>
         <meta
           name="description"
           content="Home page of Anakin Yuen's website. Come to see more info about me."

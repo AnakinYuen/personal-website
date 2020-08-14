@@ -55,7 +55,12 @@ const Controls: React.FC = () => {
     return (
       <div className={style.control}>
         {Object.keys(YourMessageMap).map((key) => (
-          <button key={key} onClick={() => dispatchThunk(ask(key))}>
+          <button
+            className="gtm-btn"
+            data-key={key}
+            key={key}
+            onClick={() => dispatchThunk(ask(key))}
+          >
             {YourMessageMap[key]}
           </button>
         ))}

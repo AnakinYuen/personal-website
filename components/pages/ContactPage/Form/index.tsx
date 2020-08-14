@@ -40,7 +40,7 @@ const Form: React.FC<Props> = (props) => {
           <label htmlFor="email">Email</label>
           <input id="email" type="text" ref={props.emailRef} />
         </div>
-        <button className={style.button} onClick={onClick}>
+        <button className={`gtm-btn ${style.button}`} onClick={onClick}>
           Send Your Message
         </button>
       </div>

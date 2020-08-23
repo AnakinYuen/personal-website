@@ -4,8 +4,6 @@ import { RangeRequestsPlugin } from 'workbox-range-requests';
 import { registerRoute } from 'workbox-routing';
 import { CacheFirst, NetworkFirst, StaleWhileRevalidate } from 'workbox-strategies';
 
-precacheAndRoute(self.__WB_MANIFEST);
-
 registerRoute(
   /\/(about|contact|home|skill|work)?$/,
   new NetworkFirst({
@@ -128,6 +126,8 @@ registerRoute(
     networkTimeoutSeconds: 10,
   }),
 );
+
+precacheAndRoute(self.__WB_MANIFEST);
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
